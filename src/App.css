@@ -1,0 +1,27 @@
+@keyframes scale-and-color {
+  0% {
+    transform: scale(1);
+    background-color: green;
+  }
+  100% {
+    transform: scale(0.333);
+    background-color: blue;
+  }
+}
+
+.animate-scale-and-color {
+  animation: scale-and-color 5s forwards;
+}
+
+.fade-in {
+  animation: fadeIn 5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
