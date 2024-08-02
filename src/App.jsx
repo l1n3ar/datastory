@@ -159,9 +159,9 @@ const App = () => {
   }
 
   return (
-    <div className=''>
+    <div className='overflow-y-scroll snap-y snap-mandatory'>
 
-      <div className='Slide-1 w-screen h-screen  flex flex-col gap-10 bg-[#262626] items-center justify-center'>
+      <div className='Slide-1 w-screen h-screen  flex flex-col gap-10 bg-[#262626] items-center justify-center snap-center'>
         <h1 className='w-96 text-white text-6xl font-bold font-["Roboto Condensed"]'>
           How your food is heating more than just your plate.
         </h1>
@@ -176,7 +176,7 @@ const App = () => {
         </div>
       </div>
 
-      <div ref={slide2Ref} className='Slide-2 w-screen h-screen  flex flex-col gap-10 items-center justify-center bg-[#35e38f]'>
+      <div ref={slide2Ref} className='Slide-2 w-screen h-screen  flex flex-col gap-10 items-center justify-center bg-[#35e38f] snap-center'>
 
         <div className='flex gap-6 flex-col'>
           <h1 className='w-[70rem] text-[#262626] text-5xl font-bold font-["Roboto Condensed"]'>Which of these bags would you choose for a day’s worth of grocery?</h1>
@@ -218,33 +218,33 @@ const App = () => {
         </div>
       </div>
 
-      <div ref={slide3Ref} className='Slide-3 w-screen h-screen  flex flex-col gap-10 items-center justify-center bg-[#262626]'>
+      <div ref={slide3Ref} className='Slide-3 w-screen h-screen  flex flex-col gap-10 items-center justify-center bg-[#262626] snap-center'>
         <h1 className='w-[60rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>If you bought this bag everyday for the rest of your life, </h1>
         <div className='w-[60rem]'><img src='/slide-3.png' alt='slide-3' /></div>
       </div>
 
-      <div className='Slide-4 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626]'>
+      <div className='Slide-4 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] snap-center'>
         <h1 className='w-[60rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>it would need <span className='underline'>{selectedFood.land}</span> sq. m of land to grow.
           That’s equivalent to the area of <span className='underline text-[#35e38f]'>{selectedFood.eq}</span>.</h1>
         {/* <div className='text-white'>Some graphic</div> */}
       </div>
 
-      <div className='Slide-5 w-screen h-screen  flex flex-col items-center justify-center gap-2 bg-[#262626]'>
+      <div className='Slide-5 w-screen h-screen  flex flex-col items-center justify-center gap-2 bg-[#262626] snap-center'>
         <h1 className='w-[60rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>Look at how that compares to the land area required to grow the other bags of grocery,</h1>
         <div className='w-[40rem] flex items-center justify-center'><div className="flourish-embed flourish-hierarchy w-full" data-src="visualisation/18940722"></div></div>
       </div>
 
-      <div className='Slide-6 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] text-white'>
+      <div className='Slide-6 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] text-white snap-center'>
       <div className='w-[50rem]'><img src='/slide-6.png' alt='slide-3' /></div>
       </div>
 
-      <div className='Slide-7 w-screen h-screen  flex items-center justify-center text-[#35e38f] font-["Roboto Condensed"] text-5xl bg-[#262626]'>
+      <div className='Slide-7 w-screen h-screen  flex items-center justify-center text-[#35e38f] font-["Roboto Condensed"] text-5xl bg-[#262626] snap-center'>
         <div className='w-[60rem]'>
           so, only <span className='p-1 text-[#262626] bg-[#35e38f]'> 17%</span> of global <span className='underline'> calorie supply </span> and <span className='p-1 text-[#262626] bg-[#35e38f]'> 38% </span> of global <span className='underline'>protein supply </span>comes from 80% of our agricultural land which is <span className='text-white'>35% of all habitable surface of the planet.</span>
         </div>
       </div>
 
-      <div className='Slide-8 w-screen h-screen  flex flex-col gap-14 bg-[#262626] items-center justify-center text-white'>
+      <div className='Slide-8 w-screen h-screen  flex flex-col gap-14 bg-[#262626] items-center justify-center text-white snap-center'>
         <div className='flex flex-col items-center justify-center w-[60rem] gap-2'>
           <p className='text-xl font-light font-["Roboto"]'>Now, most of this agricultural land uses nitrogen fertilizer for yields. </p>
           <p className='text-2xl  font-["Roboto"]'>But, why are nitrogen fertilizers necessary? </p>
@@ -269,20 +269,20 @@ const App = () => {
         <p className='text-2xl w-[40rem] font-["Roboto"] text-[#35e38f] font-semibold'>Natural soil often lacks sufficient nitrogen to meet the demands of high-yield crops, especially in intensive farming systems. As a result the world is increasingly relying on the use of synthetic fertilizers over natural ones to cope with the demands of the growing population.</p>
       </div>
 
-      <div className='Slide-9 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-10 text-white font-["Roboto"]'>
+      <div className='Slide-9 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-10 text-white font-["Roboto"] snap-center'>
         <h1 className='text-2xl font-light w-[45rem]'>In the process, <span className='font-bold'> nitrogen fertilizers emit nitrous oxide </span>during mainly through two processes in the soil: Nitrification and Denitrification.</h1>
         <h1 className='text-4xl font-bold w-[45rem] text-[#35e38f]'>Nitrous Oxide is a significant greenhouse gas that is often overlooked in climate action.</h1>
         <h1 className='font-bold text-5xl'>So, how is Nitrous Oxide relevant?</h1>
       </div>
 
-      <div className='Slide-10 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"]'>
+      <div className='Slide-10 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"] snap-center'>
         <h1 className='w-[60rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>The three major greenhouse gases in the atmosphere are Carbon Dioxide, Methane and Nitrous Oxide. </h1>
         <div className='w-[50rem]'>
           <img src='/slide-10.jpeg' alt='Graph' />
         </div>
       </div>
 
-      <div className='Slide-11 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"]'>
+      <div className='Slide-11 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"] snap-center'>
 
         <h1 className='w-[50rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>Today, Nitrous Oxide levels in the air are increasing rapidly.</h1>
         <Tabs defaultValue="linear" className="w-[50rem]">
@@ -300,14 +300,14 @@ const App = () => {
         </Tabs>
       </div>
 
-      <div className='Slide-12 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"]'>
+      <div className='Slide-12 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"] snap-center'>
         <h1 className='w-[69rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>The Nitrous Oxide emissions from <span className='text-[#262626] bg-[#35e38f]'> agriculture </span> around the world contribute to a total of <span className=' text-[#262626] bg-[#35e38f]'>  67% </span> <span className='text-[#35e38f]'>  nitrous oxide emissions globally.</span> </h1>
         <div className='w-[50rem]'>
           <img src='/slide-12.png' alt='Graph' />
         </div>
       </div>
 
-      <div className='Slide-13 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"]'>
+      <div className='Slide-13 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"] snap-center'>
         <h1 className='w-[60rem] text-white text-lg font-light font-["Roboto Condensed"]'>Most of the agricultural land that needs these fertilizers are used for livestock. Combining meat and dairy, feed takes up most of the agricultural landscape. 
         Rearing cattle for meat and dairy combined, takes up most of this agricultural land. </h1>
         <h1 className='w-[60rem] text-white font-semibold text-xl font-["Roboto Condensed"]'>Let us look at the countries in the world with the most number of cattle and their nitrous oxide emissions.</h1>
@@ -316,7 +316,7 @@ const App = () => {
         </div>
       </div>
         
-      <div className='Slide-14 w-screen h-screen  flex flex-col items-center justify-center  bg-[#35e38f] gap-12 text-[#262626] font-["Roboto"]'>
+      <div className='Slide-14 w-screen h-screen  flex flex-col items-center justify-center  bg-[#35e38f] gap-12 text-[#262626] font-["Roboto"] snap-center'>
         <h1 className='w-[50rem] text-5xl font-bold font-["Roboto"] leading-[3.4rem]'>
         It is not a coincidence that the countries with the <span className='underline'> highest cattle count </span> are also the countries with <span className='bg-white text-[#35e38f]'> highest Nitrous Oxide levels. </span>
         </h1>
@@ -324,7 +324,7 @@ const App = () => {
        
       </div>
 
-      <div className='Slide-15 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-4 text-white font-["Roboto"]'>
+      <div className='Slide-15 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-4 text-white font-["Roboto"] snap-center'>
         <h1 className='w-[55rem] text-white text-2xl font-bold font-["Roboto"]'>As countries become more prosperous, they increasingly depend on animal protein sources,  </h1>
          <div className='w-[50rem] flex items-center justify-center'><div className="flourish-embed flourish-hierarchy w-full" data-src="visualisation/18939006"></div></div>
          <h1 className='w-[55rem] text-[#35e38f]  text-2xl font-normal font-["Roboto"]'>creating a persistent cycle in which we struggle to find solutions that balance our dietary needs with planetary sustainability. </h1>
