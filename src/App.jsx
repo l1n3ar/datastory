@@ -235,21 +235,21 @@ const App = () => {
       </div>
 
       <div className='Slide-6 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] text-white snap-center'>
-      <div className='w-[50rem]'><img src='/slide-6.png' alt='slide-3' /></div>
+      <div className='w-[60rem]'><img src='/slide-6.png' alt='slide-3' /></div>
       </div>
 
-      <div className='Slide-7 w-screen h-screen  flex items-center justify-center text-[#35e38f] font-["Roboto Condensed"] text-5xl bg-[#262626] snap-center'>
+      <div className='Slide-7 w-screen h-screen  flex items-center justify-center text-[#35e38f] font-["Roboto"] font-semibold text-5xl bg-[#262626] snap-center'>
         <div className='w-[60rem]'>
-          so, only <span className='p-1 text-[#262626] bg-[#35e38f]'> 17%</span> of global <span className='underline'> calorie supply </span> and <span className='p-1 text-[#262626] bg-[#35e38f]'> 38% </span> of global <span className='underline'>protein supply </span>comes from 80% of our agricultural land which is <span className='text-white'>35% of all habitable surface of the planet.</span>
+          so, only <span className='text-[#262626] bg-[#68fdb5]'> 17%</span> of global <span className='underline'> calorie supply </span> and <span className='text-[#262626] bg-[#68fdb5]'> 38% </span> of global <span className='underline'>protein supply </span>comes from 80% of our agricultural land which is <span className='text-white'>35% of all habitable surface of the planet.</span>
         </div>
       </div>
 
       <div className='Slide-8 w-screen h-screen  flex flex-col gap-14 bg-[#262626] items-center justify-center text-white snap-center'>
         <div className='flex flex-col items-center justify-center w-[60rem] gap-2'>
           <p className='text-xl font-light font-["Roboto"]'>Now, most of this agricultural land uses nitrogen fertilizer for yields. </p>
-          <p className='text-2xl  font-["Roboto"]'>But, why are nitrogen fertilizers necessary? </p>
+          <p className='text-2xl  font-bold font-["Roboto"]'>But, why are nitrogen fertilizers necessary? </p>
         </div>
-        <div className='flex w-[60rem] items-center justify-evenly'>
+        <div className='flex w-[70rem] items-center justify-evenly'>
 
           <div className='flex flex-col gap-6 items-center justify-center'>
           <img src='/slide-8-1.png' alt='slide-3' style={{height : "100px"}}/>
@@ -266,7 +266,7 @@ const App = () => {
           </div>
 
         </div>
-        <p className='text-2xl w-[40rem] font-["Roboto"] text-[#35e38f] font-semibold'>Natural soil often lacks sufficient nitrogen to meet the demands of high-yield crops, especially in intensive farming systems. As a result the world is increasingly relying on the use of synthetic fertilizers over natural ones to cope with the demands of the growing population.</p>
+        <p className='text-2xl w-[40rem] font-["Roboto"] text-[#68fdb5] font-semibold'>Natural soil often lacks sufficient nitrogen to meet the demands of high-yield crops, especially in intensive farming systems. As a result the world is increasingly relying on the use of synthetic fertilizers over natural ones to cope with the demands of the growing population.</p>
       </div>
 
       <div className='Slide-9 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-10 text-white font-["Roboto"] snap-center'>
@@ -327,7 +327,7 @@ const App = () => {
       <div className='Slide-15 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-4 text-white font-["Roboto"] snap-center'>
         <h1 className='w-[55rem] text-white text-2xl font-bold font-["Roboto"]'>As countries become more prosperous, they increasingly depend on animal protein sources,  </h1>
          <div className='w-[50rem] flex items-center justify-center'><div className="flourish-embed flourish-hierarchy w-full" data-src="visualisation/18939006"></div></div>
-         <h1 className='w-[55rem] text-[#35e38f]  text-2xl font-normal font-["Roboto"]'>creating a persistent cycle in which we struggle to find solutions that balance our dietary needs with planetary sustainability. </h1>
+         <h1 className='w-[55rem] text-[#68fdb5]  text-3xl font-semibold font-["Roboto"]'>creating a persistent cycle in which we struggle to find solutions that balance our dietary needs with planetary sustainability. </h1>
       </div>
     </div>
   );
