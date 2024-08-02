@@ -159,7 +159,7 @@ const App = () => {
   }
 
   return (
-    <div className=' h-screen overflow-y-scroll'>
+    <div className=''>
 
       <div className='Slide-1 w-screen h-screen  flex flex-col gap-10 bg-[#262626] items-center justify-center'>
         <h1 className='w-96 text-white text-6xl font-bold font-["Roboto Condensed"]'>
@@ -176,7 +176,7 @@ const App = () => {
         </div>
       </div>
 
-      <div ref={slide2Ref} className='Slide-2 w-screen h-screen  flex flex-col gap-36 items-center justify-center bg-[#35e38f]'>
+      <div ref={slide2Ref} className='Slide-2 w-screen h-screen  flex flex-col gap-10 items-center justify-center bg-[#35e38f]'>
 
         <div className='flex gap-6 flex-col'>
           <h1 className='w-[70rem] text-[#262626] text-5xl font-bold font-["Roboto Condensed"]'>Which of these bags would you choose for a day’s worth of grocery?</h1>
@@ -213,7 +213,7 @@ const App = () => {
           }
         </div>
 
-        <div onClick={handleGoClick} className='border border-[#262626] rounded-lg w-96 p-4 flex items-center text-xl justify-center cursor-pointer hover:bg-[#262626] hover:text-[#35e38f] transition-colors duration-700'>
+        <div onClick={handleGoClick} className='border border-[#262626] rounded-lg w-96 p-4 mt-10 flex items-center text-xl justify-center cursor-pointer hover:bg-[#262626] hover:text-[#35e38f] transition-colors duration-700'>
           Go
         </div>
       </div>
