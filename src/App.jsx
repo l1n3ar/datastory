@@ -229,13 +229,13 @@ const App = () => {
         {/* <div className='text-white'>Some graphic</div> */}
       </div>
 
-      <div className='Slide-5 w-screen h-screen  flex flex-col gap-5 items-center justify-center bg-[#262626]'>
+      <div className='Slide-5 w-screen h-screen  flex flex-col items-center justify-center gap-2 bg-[#262626]'>
         <h1 className='w-[60rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>Look at how that compares to the land area required to grow the other bags of grocery,</h1>
-        <div className='w-[60rem] flex items-center justify-center'><div className="flourish-embed flourish-hierarchy w-full" data-src="visualisation/18940722"></div></div>
+        <div className='w-[40rem] flex items-center justify-center'><div className="flourish-embed flourish-hierarchy w-full" data-src="visualisation/18940722"></div></div>
       </div>
 
       <div className='Slide-6 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] text-white'>
-      <div className='w-[60rem]'><img src='/slide-6.png' alt='slide-3' /></div>
+      <div className='w-[50rem]'><img src='/slide-6.png' alt='slide-3' /></div>
       </div>
 
       <div className='Slide-7 w-screen h-screen  flex items-center justify-center text-[#35e38f] font-["Roboto Condensed"] text-5xl bg-[#262626]'>
@@ -244,21 +244,21 @@ const App = () => {
         </div>
       </div>
 
-      <div className='Slide-8 w-screen h-screen  flex flex-col gap-28 bg-[#262626] items-center justify-center text-white'>
+      <div className='Slide-8 w-screen h-screen  flex flex-col gap-14 bg-[#262626] items-center justify-center text-white'>
         <div className='flex flex-col items-center justify-center w-[60rem] gap-2'>
           <p className='text-xl font-light font-["Roboto"]'>Now, most of this agricultural land uses nitrogen fertilizer for yields. </p>
           <p className='text-2xl  font-["Roboto"]'>But, why are nitrogen fertilizers necessary? </p>
         </div>
         <div className='flex w-[60rem] items-center justify-evenly'>
 
-          <div className='flex flex-col gap-10 items-center justify-center'>
+          <div className='flex flex-col gap-6 items-center justify-center'>
           <img src='/slide-8-1.png' alt='slide-3' style={{height : "100px"}}/>
             {/* <div className='h-[10rem] w-[10rem] border border-white rounded-lg'></div> */}
             <p className='text-2xl  font-["Roboto"] font-bold'>Essential Nutrients </p>
             <p className=' font-light font-["Roboto"] w-[12rem]'>Nitrogen is a major component of amino acids, which are the building blocks of proteins. It is also a crucial part of chlorophyll, the molecule that enables photosynthesis, allowing plants to convert sunlight into energy.</p>
           </div>
 
-          <div className='flex flex-col gap-10 items-center justify-center'>
+          <div className='flex flex-col gap-6 items-center justify-center'>
           <img src='/slide-8-2.png' alt='slide-3' style={{height : "100px"}}/>
             {/* <div className='h-[10rem] w-[10rem] border border-white rounded-lg'></div> */}
             <p className='text-2xl  font-["Roboto"] font-bold'>Crop Yields</p>
@@ -277,24 +277,24 @@ const App = () => {
 
       <div className='Slide-10 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"]'>
         <h1 className='w-[60rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>The three major greenhouse gases in the atmosphere are Carbon Dioxide, Methane and Nitrous Oxide. </h1>
-        <div className='w-[60rem]'>
+        <div className='w-[50rem]'>
           <img src='/slide-10.jpeg' alt='Graph' />
         </div>
       </div>
 
       <div className='Slide-11 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"]'>
 
-        <h1 className='w-[60rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>Today, Nitrous Oxide levels in the air are increasing rapidly.</h1>
-        <Tabs defaultValue="linear" className="w-[60rem]">
+        <h1 className='w-[50rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>Today, Nitrous Oxide levels in the air are increasing rapidly.</h1>
+        <Tabs defaultValue="linear" className="w-[50rem]">
           <TabsList>
             <TabsTrigger value="linear">Linear</TabsTrigger>
             <TabsTrigger value="log">Log</TabsTrigger>
           </TabsList>
           <TabsContent value="linear">
-            <div className='w-[60rem]'>
+            <div className='w-[50]'>
               <img src='/linear.png' alt='Graph' />
             </div></TabsContent>
-          <TabsContent value="log"> <div className='w-[60rem]'>
+          <TabsContent value="log"> <div className='w-[50]'>
             <img src='/log.png' alt='Graph' />
           </div></TabsContent>
         </Tabs>
@@ -302,7 +302,7 @@ const App = () => {
 
       <div className='Slide-12 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"]'>
         <h1 className='w-[69rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>The Nitrous Oxide emissions from <span className='text-[#262626] bg-[#35e38f]'> agriculture </span> around the world contribute to a total of <span className=' text-[#262626] bg-[#35e38f]'>  67% </span> <span className='text-[#35e38f]'>  nitrous oxide emissions globally.</span> </h1>
-        <div className='w-[60rem]'>
+        <div className='w-[50rem]'>
           <img src='/slide-12.png' alt='Graph' />
         </div>
       </div>
@@ -324,9 +324,9 @@ const App = () => {
        
       </div>
 
-      <div className='Slide-15 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"]'>
+      <div className='Slide-15 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-4 text-white font-["Roboto"]'>
         <h1 className='w-[55rem] text-white text-2xl font-bold font-["Roboto"]'>As countries become more prosperous, they increasingly depend on animal protein sources,  </h1>
-         <div className='w-[70rem] flex items-center justify-center'><div className="flourish-embed flourish-hierarchy w-full" data-src="visualisation/18939006"></div></div>
+         <div className='w-[50rem] flex items-center justify-center'><div className="flourish-embed flourish-hierarchy w-full" data-src="visualisation/18939006"></div></div>
          <h1 className='w-[55rem] text-[#35e38f]  text-2xl font-normal font-["Roboto"]'>creating a persistent cycle in which we struggle to find solutions that balance our dietary needs with planetary sustainability. </h1>
       </div>
     </div>
