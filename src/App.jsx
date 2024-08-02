@@ -159,7 +159,7 @@ const App = () => {
   }
 
   return (
-    <div className='overflow-y-scroll snap-y snap-mandatory'>
+    <div className='overflow-y-scroll snap-y snap-mandatory h-screen'>
 
       <div className='Slide-1 w-screen h-screen  flex flex-col gap-10 bg-[#262626] items-center justify-center snap-center'>
         <h1 className='w-96 text-white text-6xl font-bold font-["Roboto Condensed"]'>
