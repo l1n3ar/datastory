@@ -257,12 +257,16 @@ const App = () => {
         That’s equivalent to the area of <span className='underline text-[#35e38f]'>{selectedFood.eq}</span>.</h1>
         </div>
         
-      
       </div>
 
-      <div className='Slide-5 w-screen h-screen  flex flex-col items-center justify-center gap-2 bg-[#262626] snap-center'>
-        <h1 className='w-[60rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>Look at how that compares to the land area required to grow the other bags of grocery,</h1>
-        <div className='w-[40rem] flex items-center justify-center'><div className="flourish-embed flourish-hierarchy w-full" data-src="visualisation/18940722"></div></div>
+      <div className='Slide-5 w-screen h-screen bg-[url("/bg/blur.png")] snap-center'>
+        <Header green={true} />
+        <div className='flex w-full h-full items-center justify-around'>
+        <div className='w-[40rem] flex items-center justify-evenly'><div className="flourish-embed flourish-hierarchy w-full bg-transparent" data-src="visualisation/18940722"></div></div>
+        <h1 className='w-[20rem] text-white text-5xl font-bold font-["Roboto_Condensed"]'>Look at how that <span className='text-[#36E390]'>compares to the land area</span> required to grow the other bags of grocery,</h1>
+       
+        </div>
+  
       </div>
 
 
