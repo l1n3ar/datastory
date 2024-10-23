@@ -353,7 +353,6 @@ const App = () => {
         <Header green = {true} />
         <div className='flex flex-col items-center justify-center gap-12'>
 
-   
         <h1 className='w-[60rem] text-white text-5xl font-bold '>The three major greenhouse gases in the atmosphere are Carbon Dioxide, Methane and Nitrous Oxide. </h1>
         <div className='w-[50rem]'>
           <img src='/slide-10.jpeg' alt='Graph' />
@@ -361,8 +360,10 @@ const App = () => {
         </div>
       </div>
 
-      <div className='Slide-11 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"] snap-center'>
-
+      <div className='Slide-13 w-screen h-screen   bg-[#262626] bg-[url("/new/13.png")] bg-cover bg-no-repeat gap-12 text-white font-["Roboto"] snap-center'>
+        <Header green = {true} />
+       
+      <div className='flex flex-col items-center justify-center h-[80vh] gap-10'>
         <h1 className='w-[50rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>Today, Nitrous Oxide levels in the air are increasing rapidly.</h1>
         <Tabs defaultValue="linear" className="w-[50rem]">
           <TabsList>
@@ -377,6 +378,7 @@ const App = () => {
             <img src='/log.png' alt='Graph' />
           </div></TabsContent>
         </Tabs>
+      </div>
       </div>
 
       <div className='Slide-12 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"] snap-center'>
