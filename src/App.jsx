@@ -381,10 +381,15 @@ const App = () => {
       </div>
       </div>
 
-      <div className='Slide-12 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"] snap-center'>
+      <div className='Slide-14 w-screen h-screen  bg-[url("/bg/blur.png")]  text-white font-["Roboto"] snap-center'>
+      <Header green={true} />
+      <div className='h-[80vh] w-full flex flex-col items-center justify-center gap-12'>
+
+     
         <h1 className='w-[69rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>The Nitrous Oxide emissions from <span className='text-[#262626] bg-[#35e38f]'> agriculture </span> around the world contribute to a total of <span className=' text-[#262626] bg-[#35e38f]'>  67% </span> <span className='text-[#35e38f]'>  nitrous oxide emissions globally.</span> </h1>
         <div className='w-[50rem]'>
           <img src='/slide-12.png' alt='Graph' />
+        </div>
         </div>
       </div>
 
