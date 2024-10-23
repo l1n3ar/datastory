@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* For Roboto Condensed specific elements */
+.font-\[\"Roboto\ Condensed\"\] {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* For Roboto specific elements */
+.font-\[\"Roboto\"\] {
+  font-family: 'Roboto', sans-serif;
+}
+
 @keyframes scale-and-color {
   0% {
     transform: scale(1);

@@ -3,6 +3,24 @@ import './App.css';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
 
 
+
+
+const Header = (props) => {
+
+  return (
+    <div className='w-full h-[5rem] bg-transparent flex justify-end'>
+      {
+        props.green && <img src="/header/cow-green.png" alt='header-img' className='w-30 h-15 p-4'></img>
+      }
+      {
+        props.white && <img src="/header/cow-white.png" alt='header-img' className='w-30 h-15 p-4'></img>
+      }
+
+    </div>
+  )
+}
+
+
 const createScript = (src) => {
   const script = document.createElement('script');
   script.src = src;
@@ -29,8 +47,8 @@ const foods = [
         value: '600g'
       }
     ],
-    eq : "1.5 Cubbon Parks",
-    land : '26973'
+    eq: "1.5 Cubbon Parks",
+    land: '26973'
   },
   {
     title: 'B',
@@ -53,8 +71,8 @@ const foods = [
         value: '600g'
       }
     ],
-     eq : "2 x Lodhi Gardens",
-    land : '10911'
+    eq: "2 x Lodhi Gardens",
+    land: '10911'
   },
   {
     title: 'C',
@@ -73,9 +91,9 @@ const foods = [
         value: '600g'
       }
     ],
-    eq : "Half of central park in New York",
-    land : '24013'
-    
+    eq: "Half of central park in New York",
+    land: '24013'
+
   },
   {
     title: 'D',
@@ -98,8 +116,8 @@ const foods = [
         value: '600g'
       }
     ],
-    eq : "Eden Gardens",
-    land : '2624'
+    eq: "Eden Gardens",
+    land: '2624'
   },
   {
     title: 'E',
@@ -122,15 +140,15 @@ const foods = [
         value: '600g'
       }
     ],
-    eq : "Chhatrapati Shivaji Maharaj Terminus, Bombay",
-    land : '2332'
+    eq: "Chhatrapati Shivaji Maharaj Terminus, Bombay",
+    land: '2332'
   },
 
 ]
 
 const App = () => {
-  const [selectedFood,setSelectedFood] = useState({
-    title : "None"
+  const [selectedFood, setSelectedFood] = useState({
+    title: "None"
   })
 
   const slide2Ref = useRef(null);
@@ -149,7 +167,7 @@ const App = () => {
   };
 
   const handleGoClick = () => {
-    
+
     slide3Ref.current.scrollIntoView({ behavior: 'smooth' });
     console.log("first")
   };
@@ -161,19 +179,18 @@ const App = () => {
   return (
     <div className='overflow-y-scroll snap-y snap-mandatory h-screen'>
 
-      <div className='Slide-1 w-screen h-screen  flex flex-col gap-10 bg-[#262626] items-center justify-center snap-center'>
-        <h1 className='w-96 text-white text-6xl font-bold font-["Roboto Condensed"]'>
-          How your food is heating more than just your plate.
-        </h1>
-
-        <div className='flex flex-col gap-4'>
-          <h2 className='w-96 text-white text-2xl font-light font-["Roboto"]'>A explorative analysis of how nitrous oxide emissions from agricultural practices and culinary choices are contributing to the rise in mean global temperature.</h2>
-          <p className='w-96 h-4 text-white text-sm font-medium font-["Roboto"] leading-none tracking-widest'>02.08.2024</p>
+      <div className='Slide-1 w-screen h-screen bg-[url("/bg/slide-1.png")] bg-cover bg-no-repeat snap-center'>
+        <Header green={true} />
+        <div className='w-full  py-[10rem] px-[20rem] h-2/3 flex flex-col justify-between'>
+          <h1 className='text-6xl font-["Roboto_Condensed"] text-white w-1/3 font-semibold tracking-normal'>How your food is heating more than just your plate.</h1>
+          <p className='text-2xl font-["Roboto"] text-white w-2/5 font-light tracking-wide'>An explorative analysis of how nitrous oxide emissions from agricultural practices and culinary choices are contributing to the rise in mean global temperature.</p>
+        </div>
+        <div className='w-full flex items-center justify-center mt-20'>
+          <div onClick={handleStartClick} className='border rounded-lg p-2 font-["Roboto"] min-w-48 flex text-xl items-center justify-center border-[#68fdb5] text-[#68fdb5]  cursor-pointer hover:bg-[#68fdb5] hover:text-[#262626] transition-colors duration-700'>
+            Start
+          </div>
         </div>
 
-        <div onClick={handleStartClick} className='border rounded-lg p-4 w-96 flex text-xl items-center justify-center border-[#68fdb5] text-[#68fdb5] font-["Roboto"] cursor-pointer hover:bg-[#68fdb5] hover:text-[#262626] transition-colors duration-700'>
-          Start
-        </div>
       </div>
 
       <div ref={slide2Ref} className='Slide-2 w-screen h-screen  flex flex-col gap-10 items-center justify-center bg-[#35e38f] snap-center'>
@@ -192,11 +209,11 @@ const App = () => {
             foods.map((food) => (
               <div key={food.title} className='flex flex-col items-center gap-10 justify-start h-full w-full'>
                 <div className='h-[3rem] w-[3rem] rounded-full flex items-center justify-center bg-gray-300 font-bold text-2xl'>{food.title}</div>
-                <div className={`h-[15rem] w-[12rem] p-4 flex flex-col gap-4 items-center justify-center border border-[#262626] rounded-lg cursor-pointer hover:-translate-y-2 duration-300 ${selectedFood.title == food.title ? 'border-dashed border-black border-4' : ''}` } onClick={() => handleSelectedClick(food)}>
-                    <div className={ `${food.title != 'A' || food.title != 'E' ? 'w-[5.5rem] h-[5.5rem]' : 'w-[1rem] h-[1rem]'} flex items-center justify-center`}> 
+                <div className={`h-[15rem] w-[12rem] p-4 flex flex-col gap-4 items-center justify-center border border-[#262626] rounded-lg cursor-pointer hover:-translate-y-2 duration-300 ${selectedFood.title == food.title ? 'border-dashed border-black border-4' : ''}`} onClick={() => handleSelectedClick(food)}>
+                  <div className={`${food.title != 'A' || food.title != 'E' ? 'w-[5.5rem] h-[5.5rem]' : 'w-[1rem] h-[1rem]'} flex items-center justify-center`}>
                     <img src={food.image} alt='Food image' />
-                    </div>
-                 
+                  </div>
+
                   <div className='flex flex-col items-center justify-center'>
                     {
                       food.items.map((item, index) => (
@@ -234,9 +251,7 @@ const App = () => {
         <div className='w-[40rem] flex items-center justify-center'><div className="flourish-embed flourish-hierarchy w-full" data-src="visualisation/18940722"></div></div>
       </div>
 
-      <div className='Slide-6 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] text-white snap-center'>
-      <div className='w-[60rem]'><img src='/slide-6.png' alt='slide-3' /></div>
-      </div>
+
 
       <div className='Slide-7 w-screen h-screen  flex items-center justify-center text-[#35e38f] font-["Roboto"] font-semibold text-5xl bg-[#262626] snap-center'>
         <div className='w-[60rem]'>
@@ -252,14 +267,14 @@ const App = () => {
         <div className='flex w-[70rem] items-center justify-evenly'>
 
           <div className='flex flex-col gap-6 items-center justify-center'>
-          <img src='/slide-8-1.png' alt='slide-3' style={{height : "100px"}}/>
+            <img src='/slide-8-1.png' alt='slide-3' style={{ height: "100px" }} />
             {/* <div className='h-[10rem] w-[10rem] border border-white rounded-lg'></div> */}
             <p className='text-2xl  font-["Roboto"] font-bold'>Essential Nutrients </p>
             <p className=' font-light font-["Roboto"] w-[12rem]'>Nitrogen is a major component of amino acids, which are the building blocks of proteins. It is also a crucial part of chlorophyll, the molecule that enables photosynthesis, allowing plants to convert sunlight into energy.</p>
           </div>
 
           <div className='flex flex-col gap-6 items-center justify-center'>
-          <img src='/slide-8-2.png' alt='slide-3' style={{height : "100px"}}/>
+            <img src='/slide-8-2.png' alt='slide-3' style={{ height: "100px" }} />
             {/* <div className='h-[10rem] w-[10rem] border border-white rounded-lg'></div> */}
             <p className='text-2xl  font-["Roboto"] font-bold'>Crop Yields</p>
             <p className=' font-light font-["Roboto"] w-[12rem]'>Adequate nitrogen availability directly correlates with increased crop yields. Insufficient nitrogen can lead to poor plant growth, reduced leaf area, and lower biomass production, ultimately affecting the quantity and quality of the harvest.</p>
@@ -269,11 +284,7 @@ const App = () => {
         <p className='text-2xl w-[40rem] font-["Roboto"] text-[#68fdb5] font-semibold'>Natural soil often lacks sufficient nitrogen to meet the demands of high-yield crops, especially in intensive farming systems. As a result the world is increasingly relying on the use of synthetic fertilizers over natural ones to cope with the demands of the growing population.</p>
       </div>
 
-      <div className='Slide-9 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-10 text-white font-["Roboto"] snap-center'>
-        <h1 className='text-2xl font-light w-[45rem]'>In the process, <span className='font-bold'> nitrogen fertilizers emit nitrous oxide </span>during mainly through two processes in the soil: Nitrification and Denitrification.</h1>
-        <h1 className='text-4xl font-bold w-[45rem] text-[#35e38f]'>Nitrous Oxide is a significant greenhouse gas that is often overlooked in climate action.</h1>
-        <h1 className='font-bold text-5xl'>So, how is Nitrous Oxide relevant?</h1>
-      </div>
+
 
       <div className='Slide-10 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"] snap-center'>
         <h1 className='w-[60rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>The three major greenhouse gases in the atmosphere are Carbon Dioxide, Methane and Nitrous Oxide. </h1>
@@ -307,27 +318,20 @@ const App = () => {
         </div>
       </div>
 
-      <div className='Slide-13 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"] snap-center'>
-        <h1 className='w-[60rem] text-white text-lg font-light font-["Roboto Condensed"]'>Most of the agricultural land that needs these fertilizers are used for livestock. Combining meat and dairy, feed takes up most of the agricultural landscape. 
-        Rearing cattle for meat and dairy combined, takes up most of this agricultural land. </h1>
-        <h1 className='w-[60rem] text-white font-semibold text-xl font-["Roboto Condensed"]'>Let us look at the countries in the world with the most number of cattle and their nitrous oxide emissions.</h1>
-        <div className='w-[60rem]'>
-          <img src='/slide-13.png' alt='Graph' />
-        </div>
-      </div>
-        
+
+
       <div className='Slide-14 w-screen h-screen  flex flex-col items-center justify-center  bg-[#35e38f] gap-12 text-[#262626] font-["Roboto"] snap-center'>
         <h1 className='w-[50rem] text-5xl font-bold font-["Roboto"] leading-[3.4rem]'>
-        It is not a coincidence that the countries with the <span className='underline'> highest cattle count </span> are also the countries with <span className='bg-white text-[#35e38f]'> highest Nitrous Oxide levels. </span>
+          It is not a coincidence that the countries with the <span className='underline'> highest cattle count </span> are also the countries with <span className='bg-white text-[#35e38f]'> highest Nitrous Oxide levels. </span>
         </h1>
         <p className='text-white w-[50rem] text-xl'>Amongst them however, there are disparities between cattle count and emissions owing to various factors such as policy changes (as in China) or average nitrogen efficiency in agriculture. </p>
-       
+
       </div>
 
       <div className='Slide-15 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-4 text-white font-["Roboto"] snap-center'>
         <h1 className='w-[55rem] text-white text-2xl font-bold font-["Roboto"]'>As countries become more prosperous, they increasingly depend on animal protein sources,  </h1>
-         <div className='w-[50rem] flex items-center justify-center'><div className="flourish-embed flourish-hierarchy w-full" data-src="visualisation/18939006"></div></div>
-         <h1 className='w-[55rem] text-[#68fdb5]  text-3xl font-semibold font-["Roboto"]'>creating a persistent cycle in which we struggle to find solutions that balance our dietary needs with planetary sustainability. </h1>
+        <div className='w-[50rem] flex items-center justify-center'><div className="flourish-embed flourish-hierarchy w-full" data-src="visualisation/18939006"></div></div>
+        <h1 className='w-[55rem] text-[#68fdb5]  text-3xl font-semibold font-["Roboto"]'>creating a persistent cycle in which we struggle to find solutions that balance our dietary needs with planetary sustainability. </h1>
       </div>
     </div>
   );
