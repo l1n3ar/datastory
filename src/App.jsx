@@ -193,8 +193,12 @@ const App = () => {
 
       </div>
 
-      <div ref={slide2Ref} className='Slide-2 w-screen h-screen flex flex-col items-center py-10 justify-evenly bg-[#35e38f] snap-center'>
+      <div ref={slide2Ref} className='Slide-2 w-screen h-screen  bg-[#35e38f] snap-center'>
+        <Header white={true} />
 
+        <div className='flex flex-col h-full w-full items-center py-10 justify-evenly'>
+
+     
         <div className='flex gap-6 max-w-[70rem]'>
           <h1 className='w-2/3 text-[#262626] text-5xl font-bold font-["Roboto_Condensed"]'>Which of these bags would you choose for a day’s worth of grocery?</h1>
           <h2 className='w-1/3 text-right'>
@@ -209,7 +213,7 @@ const App = () => {
             foods.map((food) => (
               <div key={food.title} className='flex flex-col items-center gap-10 justify-start h-full w-full'>
                 <div className='h-[3rem] w-[3rem] rounded-full flex items-center justify-center bg-gray-300 font-bold text-2xl'>{food.title}</div>
-                <div className={`h-[15rem] w-[12rem] p-4 flex flex-col gap-4 items-center justify-center border border-[#262626] rounded-lg cursor-pointer hover:-translate-y-2 duration-300 ${selectedFood.title == food.title ? 'border-dashed border-black border-4' : ''}`} onClick={() => handleSelectedClick(food)}>
+                <div className={`h-[15rem] w-[12rem] p-4 flex flex-col gap-4 items-center justify-center border border-[#262626] rounded-lg cursor-pointer hover:-translate-y-2 duration-300 ${selectedFood.title == food.title ? 'border-dashed border-black border-2' : ''}`} onClick={() => handleSelectedClick(food)}>
                   <div className={`${food.title != 'A' || food.title != 'E' ? 'w-[5.5rem] h-[5.5rem]' : 'w-[1rem] h-[1rem]'} flex items-center justify-center`}>
                     <img src={food.image} alt='Food image' />
                   </div>
@@ -233,11 +237,17 @@ const App = () => {
         <div onClick={handleGoClick} className='border border-[#262626] rounded-lg min-w-48 p-2 bg-black text-white flex items-center text-xl justify-center cursor-pointer hover:bg-[#262626] hover:text-[#35e38f] transition-colors duration-700'>
           Go
         </div>
+        </div>
       </div>
 
-      <div ref={slide3Ref} className='Slide-3 w-screen h-screen  flex flex-col gap-10 items-center justify-center bg-[#262626] snap-center'>
-        <h1 className='w-[60rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>If you bought this bag everyday for the rest of your life, </h1>
+      <div ref={slide3Ref} className='Slide-3 w-screen h-screen   bg-[#262626] snap-center'>
+        <Header green={true} />
+        <div className='flex flex-col gap-12 items-center justify-center h-full w-full'>
+
+     
+        <h1 className=' text-5xl font-bold font-["Roboto_Condensed"] text-[#36E390]'>If you bought this bag everyday for the rest of your life, </h1>
         <div className='w-[60rem]'><img src='/slide-3.png' alt='slide-3' /></div>
+        </div>
       </div>
 
       <div className='Slide-4 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] snap-center'>
