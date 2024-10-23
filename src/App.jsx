@@ -340,10 +340,24 @@ const App = () => {
         </div>
       </div>
 
-      <div className='Slide-10 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"] snap-center'>
-        <h1 className='w-[60rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>The three major greenhouse gases in the atmosphere are Carbon Dioxide, Methane and Nitrous Oxide. </h1>
+      <div className='Slide-11 w-screen h-screen snap-center bg-[#36E390]'>
+          <Header white={true} />
+            <img src = '/new/11.png' alt='slide-11' />
+
+            <div className='w-full h-[80vh] px-[20rem] flex flex-col justify-evenly'>
+
+            </div>
+      </div>
+
+      <div className='Slide-12 w-screen h-screen  bg-[url("/bg/blur.png")] gap-12 text-white font-["Roboto"] snap-center'>
+        <Header green = {true} />
+        <div className='flex flex-col items-center justify-center gap-12'>
+
+   
+        <h1 className='w-[60rem] text-white text-5xl font-bold '>The three major greenhouse gases in the atmosphere are Carbon Dioxide, Methane and Nitrous Oxide. </h1>
         <div className='w-[50rem]'>
           <img src='/slide-10.jpeg' alt='Graph' />
+        </div>
         </div>
       </div>
 
