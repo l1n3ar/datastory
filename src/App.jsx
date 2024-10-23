@@ -276,6 +276,15 @@ const App = () => {
             <h1 className='font-["Roboto_Condensed"] text-neutral-400 text-5xl font-bold'>the rest 71% is ocean</h1>
         </div>
       </div>
+      <div className='Slide-7 w-screen h-screen bg-[url("/bg/slide-7.png")] bg-cover bg-no-repeat snap-center'>
+        <Header green={true} />
+        <div className='w-full h-[80vh] flex flex-col items-center justify-between '>
+            <h1 className='font-["Roboto_Condensed"] text-[#2F644B] text-6xl font-bold mt-10'>76% of this land is habitable</h1>
+            <h1 className='font-["Roboto_Condensed"] text-[#EBEBEB] text-2xl font-bold ml-4'>the rest are glaciers and barren land</h1>
+        </div>
+      </div>
+
+
       <div className='Slide-7 w-screen h-screen  flex items-center justify-center text-[#35e38f] font-["Roboto"] font-semibold text-5xl bg-[#262626] snap-center'>
         <div className='w-[60rem]'>
           so, only <span className='text-[#262626] bg-[#68fdb5]'> 17%</span> of global <span className='underline'> calorie supply </span> and <span className='text-[#262626] bg-[#68fdb5]'> 38% </span> of global <span className='underline'>protein supply </span>comes from 80% of our agricultural land which is <span className='text-white'>35% of all habitable surface of the planet.</span>
