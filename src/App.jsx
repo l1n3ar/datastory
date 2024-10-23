@@ -340,12 +340,14 @@ const App = () => {
         </div>
       </div>
 
-      <div className='Slide-11 w-screen h-screen snap-center bg-[#36E390]'>
+      <div className='Slide-11 w-screen h-screen snap-center bg-[#36E390] bg-[url("/new/11.png")]'>
         <Header white={true} />
-        <img src='/new/11.png' alt='slide-11' />
+  
 
-        <div className='w-full h-[80vh] px-[20rem] flex flex-col justify-evenly'>
-
+        <div className='w-full h-[80vh] px-[20rem] flex flex-col justify-between'>
+            <h1 className='text-white text-3xl w-[20rem] font-light'>In the process, <span className='font-bold'>nitrogen fertilizers emit nitrous oxide</span> during mainly through two processes in the soil: Nitrification and Denitrification</h1>
+            <h1 className=' text-[#68FDB5] max-w-[50rem] self-end text-6xl'>Nitrous Oxide is a significant greenhouse gas that is often overlooked in climate action.</h1>
+            <h1 className=' text-white max-w-[40rem] self-end text-right text-4xl font-semibold'>So, how is Nitrous Oxide relevant?</h1>
         </div>
       </div>
 
@@ -421,8 +423,6 @@ const App = () => {
           </h1>
           <p className='text-white w-[15rem] text-xl font-light'>Amongst them however, there are disparities between cattle count and emissions owing to various factors such as <span className='italic'>policy changes</span> (as in China) or average <span className='italic'>nitrogen efficiency</span> in agriculture. </p>
         </div>
-
-
       </div>
 
       <div className='Slide-18 w-screen h-screen   bg-[#262626] text-white font-["Roboto"] snap-center'>
