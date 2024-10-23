@@ -269,7 +269,7 @@ const App = () => {
 
       </div>
 
-      <div className='Slide-6 w-screen h-screen bg-[url("/bg/slide-6.png")] bg-no-repeat snap-center'>
+      <div className='Slide-6 w-screen h-screen bg-[url("/bg/slide-6.png")] bg-cover bg-no-repeat snap-center'>
         <Header green={true} />
         <div className='w-full h-[80vh] flex flex-col items-center justify-between '>
           <h1 className='font-["Roboto_Condensed"] text-white text-5xl font-bold'>29% of the surface of the earth is land</h1>
@@ -277,7 +277,7 @@ const App = () => {
         </div>
       </div>
 
-      <div className='Slide-7 w-screen h-screen bg-[url("/bg/slide-7.png")] bg-no-repeat snap-center'>
+      <div className='Slide-7 w-screen h-screen bg-[url("/bg/slide-7.png")] bg-cover bg-no-repeat snap-center'>
         <Header green={true} />
         <div className='w-full h-[80vh] flex flex-col items-center gap-2'>
           <h1 className='font-["Roboto_Condensed"] text-[#2F644B] text-6xl font-bold mt-10'>76% of this land is habitable</h1>
