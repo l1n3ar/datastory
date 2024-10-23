@@ -272,15 +272,34 @@ const App = () => {
       <div className='Slide-6 w-screen h-screen bg-[url("/bg/slide-6.png")] bg-cover bg-no-repeat snap-center'>
         <Header green={true} />
         <div className='w-full h-[80vh] flex flex-col items-center justify-between '>
-            <h1 className='font-["Roboto_Condensed"] text-white text-5xl font-bold'>29% of the surface of the earth is land</h1>
-            <h1 className='font-["Roboto_Condensed"] text-neutral-400 text-5xl font-bold'>the rest 71% is ocean</h1>
+          <h1 className='font-["Roboto_Condensed"] text-white text-5xl font-bold'>29% of the surface of the earth is land</h1>
+          <h1 className='font-["Roboto_Condensed"] text-neutral-400 text-5xl font-bold'>the rest 71% is ocean</h1>
         </div>
       </div>
+
       <div className='Slide-7 w-screen h-screen bg-[url("/bg/slide-7.png")] bg-cover bg-no-repeat snap-center'>
         <Header green={true} />
         <div className='w-full h-[80vh] flex flex-col items-center justify-between '>
-            <h1 className='font-["Roboto_Condensed"] text-[#2F644B] text-6xl font-bold mt-10'>76% of this land is habitable</h1>
-            <h1 className='font-["Roboto_Condensed"] text-[#EBEBEB] text-2xl font-bold ml-4'>the rest are glaciers and barren land</h1>
+          <h1 className='font-["Roboto_Condensed"] text-[#2F644B] text-6xl font-bold mt-10'>76% of this land is habitable</h1>
+          <h1 className='font-["Roboto_Condensed"] text-[#EBEBEB] text-2xl font-bold ml-4'>the rest are glaciers and barren land</h1>
+        </div>
+      </div>
+
+      <div className='Slide-8 w-screen h-screen bg-[url("/bg/slide-8.png")] bg-cover bg-no-repeat snap-center'>
+        <Header green={true} />
+        <div className='w-full h-[80vh] flex flex-col items-start justify-between px-[15rem]'>
+          <div className='w-full'>
+            <h1 className='font-["Roboto_Condensed"] text-4xl font-bold tracking-wide text-[#36E390] w-[20rem]'>45% of the habitable land is used for agriculture</h1>
+          </div>
+          <div className='w-full flex justify-between'>
+            <p className='font-["Roboto_Condensed"] text-2xl   text-[#2F644B] w-[16rem]'>the rest are forests, shrubs, built-up land and fresh water bodies.</p>
+            <div className='flex flex-col '>
+            <h3 className='font-["Roboto_Condensed"] text-2xl font-bold text-right text-[#36E390] w-[16rem]'>80% of all agricultural land is used for livestock</h3>
+            <p className='font-["Roboto_Condensed"] text-xl text-right  text-[#36E390] w-[16rem]'>(Feed + Grazing)</p>
+            </div>
+          
+          </div>
+
         </div>
       </div>
 
