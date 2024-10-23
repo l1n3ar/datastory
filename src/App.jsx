@@ -198,45 +198,45 @@ const App = () => {
 
         <div className='flex flex-col h-full w-full items-center py-10 justify-evenly'>
 
-     
-        <div className='flex gap-6 max-w-[70rem]'>
-          <h1 className='w-2/3 text-[#262626] text-5xl font-bold font-["Roboto_Condensed"]'>Which of these bags would you choose for a day’s worth of grocery?</h1>
-          <h2 className='w-1/3 text-right'>
-            <span className="text-[#262626] text-xl font-normal font-['Roboto'] italic">For this exercise let's take a world average of </span>
-            <span className="text-[#262626] text-xl font-normal font-['Roboto'] underline italic">2000-2500</span>
-            <span className="text-[#262626] text-xl font-normal font-['Roboto'] italic "> Kcal as daily calorie requirement with 60g of protein.</span>
-          </h2>
-        </div>
 
-        <div className='flex items-center justify-evenly w-[70rem] gap-2 '>
-          {
-            foods.map((food) => (
-              <div key={food.title} className='flex flex-col items-center gap-10 justify-start h-full w-full'>
-                <div className='h-[3rem] w-[3rem] rounded-full flex items-center justify-center bg-gray-300 font-bold text-2xl'>{food.title}</div>
-                <div className={`h-[15rem] w-[12rem] p-4 flex flex-col gap-4 items-center justify-center border border-[#262626] rounded-lg cursor-pointer hover:-translate-y-2 duration-300 ${selectedFood.title == food.title ? 'border-dashed border-black border-2' : ''}`} onClick={() => handleSelectedClick(food)}>
-                  <div className={`${food.title != 'A' || food.title != 'E' ? 'w-[5.5rem] h-[5.5rem]' : 'w-[1rem] h-[1rem]'} flex items-center justify-center`}>
-                    <img src={food.image} alt='Food image' />
-                  </div>
+          <div className='flex gap-6 max-w-[70rem]'>
+            <h1 className='w-2/3 text-[#262626] text-5xl font-bold font-["Roboto_Condensed"]'>Which of these bags would you choose for a day’s worth of grocery?</h1>
+            <h2 className='w-1/3 text-right'>
+              <span className="text-[#262626] text-xl font-normal font-['Roboto'] italic">For this exercise let's take a world average of </span>
+              <span className="text-[#262626] text-xl font-normal font-['Roboto'] underline italic">2000-2500</span>
+              <span className="text-[#262626] text-xl font-normal font-['Roboto'] italic "> Kcal as daily calorie requirement with 60g of protein.</span>
+            </h2>
+          </div>
 
-                  <div className='flex flex-col items-center justify-center'>
-                    {
-                      food.items.map((item, index) => (
-                        <div key={index} className='flex gap-2 items-center'>
-                          <h1 className='font-bold'>{item.name}</h1>
-                          <p>{item.value}</p>
-                        </div>
-                      ))
-                    }
+          <div className='flex items-center justify-evenly w-[70rem] gap-2 '>
+            {
+              foods.map((food) => (
+                <div key={food.title} className='flex flex-col items-center gap-10 justify-start h-full w-full'>
+                  <div className='h-[3rem] w-[3rem] rounded-full flex items-center justify-center bg-gray-300 font-bold text-2xl'>{food.title}</div>
+                  <div className={`h-[15rem] w-[12rem] p-4 flex flex-col gap-4 items-center justify-center border border-[#262626] rounded-lg cursor-pointer hover:-translate-y-2 duration-300 ${selectedFood.title == food.title ? 'border-dashed border-black border-2' : ''}`} onClick={() => handleSelectedClick(food)}>
+                    <div className={`${food.title != 'A' || food.title != 'E' ? 'w-[5.5rem] h-[5.5rem]' : 'w-[1rem] h-[1rem]'} flex items-center justify-center`}>
+                      <img src={food.image} alt='Food image' />
+                    </div>
+
+                    <div className='flex flex-col items-center justify-center'>
+                      {
+                        food.items.map((item, index) => (
+                          <div key={index} className='flex gap-2 items-center'>
+                            <h1 className='font-bold'>{item.name}</h1>
+                            <p>{item.value}</p>
+                          </div>
+                        ))
+                      }
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))
-          }
-        </div>
+              ))
+            }
+          </div>
 
-        <div onClick={handleGoClick} className='border border-[#262626] rounded-lg min-w-48 p-2 bg-black text-white flex items-center text-xl justify-center cursor-pointer hover:bg-[#262626] hover:text-[#35e38f] transition-colors duration-700'>
-          Go
-        </div>
+          <div onClick={handleGoClick} className='border border-[#262626] rounded-lg min-w-48 p-2 bg-black text-white flex items-center text-xl justify-center cursor-pointer hover:bg-[#262626] hover:text-[#35e38f] transition-colors duration-700'>
+            Go
+          </div>
         </div>
       </div>
 
@@ -244,33 +244,38 @@ const App = () => {
         <Header green={true} />
         <div className='flex flex-col gap-12 items-center justify-center h-full w-full'>
 
-     
-        <h1 className=' text-5xl font-bold font-["Roboto_Condensed"] text-[#36E390]'>If you bought this bag everyday for the rest of your life, </h1>
-        <div className='w-[60rem]'><img src='/slide-3.png' alt='slide-3' /></div>
+
+          <h1 className=' text-5xl font-bold font-["Roboto_Condensed"] text-[#36E390]'>If you bought this bag everyday for the rest of your life, </h1>
+          <div className='w-[60rem]'><img src='/slide-3.png' alt='slide-3' /></div>
         </div>
       </div>
 
-      <div className='Slide-4 w-screen h-screen   bg-[url("/bg/slide-4.png")] snap-center'>
-      <Header green={true} />
+      <div className='Slide-4 w-screen h-screen   bg-[url("/bg/slide-4.png")] bg-cover bg-no-repeat snap-center'>
+        <Header green={true} />
         <div className='h-full w-full flex flex-col items-center justify-center '>
-        <h1 className='max-w-[70rem] text-white text-5xl font-bold font-["Roboto_Condensed"]'>It would need <span className='underline'>{selectedFood.land}</span> sq. m of land to grow.
-        That’s equivalent to the area of <span className='underline text-[#35e38f]'>{selectedFood.eq}</span>.</h1>
+          <h1 className='max-w-[70rem] text-white text-5xl font-bold font-["Roboto_Condensed"]'>It would need <span className='underline'>{selectedFood.land}</span> sq. m of land to grow.
+            That’s equivalent to the area of <span className='underline text-[#35e38f]'>{selectedFood.eq}</span>.</h1>
         </div>
-        
+
       </div>
 
-      <div className='Slide-5 w-screen h-screen bg-[url("/bg/blur.png")] snap-center'>
+      <div className='Slide-5 w-screen h-screen bg-[url("/bg/blur.png")] bg-cover bg-no-repeat snap-center'>
         <Header green={true} />
         <div className='flex w-full h-full items-center justify-around'>
-        <div className='w-[40rem] flex items-center justify-evenly'><div className="flourish-embed flourish-hierarchy w-full bg-transparent" data-src="visualisation/18940722"></div></div>
-        <h1 className='w-[20rem] text-white text-5xl font-bold font-["Roboto_Condensed"]'>Look at how that <span className='text-[#36E390]'>compares to the land area</span> required to grow the other bags of grocery,</h1>
-       
+          <div className='w-[40rem] flex items-center justify-evenly'><div className="flourish-embed flourish-hierarchy w-full bg-transparent" data-src="visualisation/18940722"></div></div>
+          <h1 className='w-[20rem] text-white text-5xl font-bold font-["Roboto_Condensed"]'>Look at how that <span className='text-[#36E390]'>compares to the land area</span> required to grow the other bags of grocery,</h1>
+
         </div>
-  
+
       </div>
 
-
-
+      <div className='Slide-6 w-screen h-screen bg-[url("/bg/slide-6.png")] bg-cover bg-no-repeat snap-center'>
+        <Header green={true} />
+        <div className='w-full h-[80vh] flex flex-col items-center justify-between '>
+            <h1 className='font-["Roboto_Condensed"] text-white text-5xl font-bold'>29% of the surface of the earth is land</h1>
+            <h1 className='font-["Roboto_Condensed"] text-neutral-400 text-5xl font-bold'>the rest 71% is ocean</h1>
+        </div>
+      </div>
       <div className='Slide-7 w-screen h-screen  flex items-center justify-center text-[#35e38f] font-["Roboto"] font-semibold text-5xl bg-[#262626] snap-center'>
         <div className='w-[60rem]'>
           so, only <span className='text-[#262626] bg-[#68fdb5]'> 17%</span> of global <span className='underline'> calorie supply </span> and <span className='text-[#262626] bg-[#68fdb5]'> 38% </span> of global <span className='underline'>protein supply </span>comes from 80% of our agricultural land which is <span className='text-white'>35% of all habitable surface of the planet.</span>
