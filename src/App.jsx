@@ -181,11 +181,11 @@ const App = () => {
 
       <div className='Slide-1 w-screen h-screen bg-[url("/bg/slide-1.png")] bg-cover bg-no-repeat snap-center'>
         <Header green={true} />
-        <div className='w-full  py-[10rem] px-[20rem] h-2/3 flex flex-col justify-between'>
+        <div className='w-full py-[5rem] px-[20rem] h-3/4 flex flex-col gap-10'>
           <h1 className='text-6xl font-["Roboto_Condensed"] text-white w-1/3 font-semibold tracking-normal'>How your food is heating more than just your plate.</h1>
           <p className='text-2xl font-["Roboto"] text-white w-2/5 font-light tracking-wide'>An explorative analysis of how nitrous oxide emissions from agricultural practices and culinary choices are contributing to the rise in mean global temperature.</p>
         </div>
-        <div className='w-full flex items-center justify-center mt-20'>
+        <div className='w-full flex items-center justify-center '>
           <div onClick={handleStartClick} className='border rounded-lg p-2 font-["Roboto"] min-w-48 flex text-xl items-center justify-center border-[#68fdb5] text-[#68fdb5]  cursor-pointer hover:bg-[#68fdb5] hover:text-[#262626] transition-colors duration-700'>
             Start
           </div>
