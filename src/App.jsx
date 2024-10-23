@@ -393,6 +393,25 @@ const App = () => {
         </div>
       </div>
 
+      <div className='Slide-15 w-screen h-screen snap-center'>
+        <Header green={true} />
+        <div className='h-[80vh] w-full px-20 flex flex-col items-center justify-evenly'>
+            <h1 className='font-["Roboto_Condensed"] text-5xl w-3/4 '>
+            Most of the agricultural land that needs these fertilizers are used for livestock. Combining meat and dairy, feed takes up most of the agricultural landscape.<br />
+            <span className='text-[#36E390]'>Rearing cattle for meat and dairy combined, in turn causes more nitrous oxide emissions.</span>
+            </h1>
+
+            <img src = '/new/15.png' alt='slide-15' />
+           
+        </div>
+      </div>
+
+
+
+
+
+
+
 
 
       <div className='Slide-14 w-screen h-screen  flex flex-col items-center justify-center  bg-[#35e38f] gap-12 text-[#262626] font-["Roboto"] snap-center'>
