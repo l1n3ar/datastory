@@ -304,8 +304,9 @@ const App = () => {
       </div>
 
 
-      <div className='Slide-7 w-screen h-screen  flex items-center justify-center text-[#35e38f] font-["Roboto"] font-semibold text-5xl bg-[#262626] snap-center'>
-        <div className='w-[60rem]'>
+      <div className='Slide-9 w-screen h-screen  flex items-center justify-center text-[#35e38f] font-["Roboto"] font-semibold text-5xl bg-[#262626] snap-center'>
+        <div className='w-[60rem] font-["Roboto_Condensed"]'>
+          <img src = '/new/9.png' alt = 'slide-9' />
           so, only <span className='text-[#262626] bg-[#68fdb5]'> 17%</span> of global <span className='underline'> calorie supply </span> and <span className='text-[#262626] bg-[#68fdb5]'> 38% </span> of global <span className='underline'>protein supply </span>comes from 80% of our agricultural land which is <span className='text-white'>35% of all habitable surface of the planet.</span>
         </div>
       </div>
