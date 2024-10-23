@@ -413,21 +413,19 @@ const App = () => {
         </div>
       </div>
 
+      <div className='Slide-17 w-screen h-screen   bg-[#35e38f]  text-[#262626] font-["Roboto"] snap-center'>
+        <Header white={true} />
+        <div className='flex h-[80vh] w-full p-20 items-center justify-evenly'>
+          <h1 className='w-[40rem] text-5xl font-bold font-["Roboto_Condensed"] leading-[3.4rem]'>
+            It is not a coincidence that the countries with the <span className='underline'> highest cattle count </span> are also the countries with <span className='bg-white text-[#35e38f]'> highest Nitrous Oxide levels. </span>
+          </h1>
+          <p className='text-white w-[15rem] text-xl font-light'>Amongst them however, there are disparities between cattle count and emissions owing to various factors such as <span className='italic'>policy changes</span> (as in China) or average <span className='italic'>nitrogen efficiency</span> in agriculture. </p>
+        </div>
 
-
-
-
-
-
-      <div className='Slide-14 w-screen h-screen  flex flex-col items-center justify-center  bg-[#35e38f] gap-12 text-[#262626] font-["Roboto"] snap-center'>
-        <h1 className='w-[50rem] text-5xl font-bold font-["Roboto"] leading-[3.4rem]'>
-          It is not a coincidence that the countries with the <span className='underline'> highest cattle count </span> are also the countries with <span className='bg-white text-[#35e38f]'> highest Nitrous Oxide levels. </span>
-        </h1>
-        <p className='text-white w-[50rem] text-xl'>Amongst them however, there are disparities between cattle count and emissions owing to various factors such as policy changes (as in China) or average nitrogen efficiency in agriculture. </p>
 
       </div>
 
-      <div className='Slide-15 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-4 text-white font-["Roboto"] snap-center'>
+      <div className='Slide-18 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-4 text-white font-["Roboto"] snap-center'>
         <h1 className='w-[55rem] text-white text-2xl font-bold font-["Roboto"]'>As countries become more prosperous, they increasingly depend on animal protein sources,  </h1>
         <div className='w-[50rem] flex items-center justify-center'><div className="flourish-embed flourish-hierarchy w-full" data-src="visualisation/18939006"></div></div>
         <h1 className='w-[55rem] text-[#68fdb5]  text-3xl font-semibold font-["Roboto"]'>creating a persistent cycle in which we struggle to find solutions that balance our dietary needs with planetary sustainability. </h1>
