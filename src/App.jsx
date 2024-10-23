@@ -259,7 +259,7 @@ const App = () => {
 
       </div>
 
-      <div className='Slide-5 w-screen h-screen bg-[url("/bg/blur.png")] bg-cover bg-no-repeat snap-center'>
+      <div className='Slide-5 w-screen h-screen bg-[url("/bg/blur.png")] bg-no-repeat snap-center'>
         <Header green={true} />
         <div className='flex w-full h-full items-center justify-around'>
           <div className='w-[40rem] flex items-center justify-evenly'><div className="flourish-embed flourish-hierarchy w-full bg-transparent" data-src="visualisation/18940722"></div></div>
@@ -310,7 +310,7 @@ const App = () => {
         </div>
       </div>
 
-      <div className='Slide-10 w-screen h-screen   bg-[url("/bg/blur.png")]  text-white snap-center'>
+      <div className='Slide-10 w-screen h-screen   bg-[url("/bg/blur.png")] bg-no-repeat text-white snap-center'>
         <Header green={true} />
         <div className='flex flex-col w-full items-center justify-around h-[80vh] '>
 
@@ -351,7 +351,7 @@ const App = () => {
         </div>
       </div>
 
-      <div className='Slide-12 w-screen h-screen  bg-[url("/bg/blur.png")] gap-12 text-white font-["Roboto"] snap-center'>
+      <div className='Slide-12 w-screen h-screen  bg-[url("/bg/blur.png")] bg-no-repeat gap-12 text-white font-["Roboto"] snap-center'>
         <Header green={true} />
         <div className='flex flex-col items-center justify-center gap-12'>
 
@@ -383,7 +383,7 @@ const App = () => {
         </div>
       </div>
 
-      <div className='Slide-14 w-screen h-screen  bg-[url("/bg/blur.png")]  text-white font-["Roboto"] snap-center'>
+      <div className='Slide-14 w-screen h-screen  bg-[url("/bg/blur.png")] bg-no-repeat text-white font-["Roboto"] snap-center'>
         <Header green={true} />
         <div className='h-[80vh] w-full flex flex-col items-center justify-center gap-12'>
 
