@@ -193,18 +193,18 @@ const App = () => {
 
       </div>
 
-      <div ref={slide2Ref} className='Slide-2 w-screen h-screen  flex flex-col gap-10 items-center justify-center bg-[#35e38f] snap-center'>
+      <div ref={slide2Ref} className='Slide-2 w-screen h-screen flex flex-col items-center py-10 justify-evenly bg-[#35e38f] snap-center'>
 
-        <div className='flex gap-6 flex-col'>
-          <h1 className='w-[70rem] text-[#262626] text-5xl font-bold font-["Roboto Condensed"]'>Which of these bags would you choose for a day’s worth of grocery?</h1>
-          <h2 className='w-[70rem]'>
-            <span className="text-[#262626] text-2xl font-normal font-['Roboto']">For this exercise let's take a world average of </span>
-            <span className="text-[#262626] text-2xl font-normal font-['Roboto'] underline">2000-2500</span>
-            <span className="text-[#262626] text-2xl font-normal font-['Roboto']"> Kcal as daily calorie requirement with 60g of protein.</span>
+        <div className='flex gap-6 max-w-[70rem]'>
+          <h1 className='w-2/3 text-[#262626] text-5xl font-bold font-["Roboto_Condensed"]'>Which of these bags would you choose for a day’s worth of grocery?</h1>
+          <h2 className='w-1/3 text-right'>
+            <span className="text-[#262626] text-xl font-normal font-['Roboto'] italic">For this exercise let's take a world average of </span>
+            <span className="text-[#262626] text-xl font-normal font-['Roboto'] underline italic">2000-2500</span>
+            <span className="text-[#262626] text-xl font-normal font-['Roboto'] italic "> Kcal as daily calorie requirement with 60g of protein.</span>
           </h2>
         </div>
 
-        <div className='flex items-center justify-evenly w-[70rem] gap-2'>
+        <div className='flex items-center justify-evenly w-[70rem] gap-2 '>
           {
             foods.map((food) => (
               <div key={food.title} className='flex flex-col items-center gap-10 justify-start h-full w-full'>
@@ -230,7 +230,7 @@ const App = () => {
           }
         </div>
 
-        <div onClick={handleGoClick} className='border border-[#262626] rounded-lg w-96 p-4 mt-10 flex items-center text-xl justify-center cursor-pointer hover:bg-[#262626] hover:text-[#35e38f] transition-colors duration-700'>
+        <div onClick={handleGoClick} className='border border-[#262626] rounded-lg min-w-48 p-2 bg-black text-white flex items-center text-xl justify-center cursor-pointer hover:bg-[#262626] hover:text-[#35e38f] transition-colors duration-700'>
           Go
         </div>
       </div>
