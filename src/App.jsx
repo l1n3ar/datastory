@@ -259,10 +259,10 @@ const App = () => {
 
       </div>
 
-      <div className='Slide-5 w-screen h-screen bg-[url("/bg/blur.png")] bg-no-repeat snap-center'>
+      <div className='Slide-5 w-screen h-screen bg-[url("/bg/blur.png")] bg-cover bg-no-repeat snap-center'>
         <Header green={true} />
-        <div className='flex w-full h-full items-center justify-around'>
-          <div className='w-[40rem] flex items-center justify-evenly'><div className="flourish-embed flourish-hierarchy w-full bg-transparent" data-src="visualisation/18940722"></div></div>
+        <div className='flex w-full h-full justify-center items-center gap-[12rem]'>
+          <div className='w-[40rem] flex items-center justify-around'><div className="flourish-embed flourish-hierarchy w-full bg-transparent" data-src="visualisation/18940722"></div></div>
           <h1 className='w-[20rem] text-white text-5xl font-bold font-["Roboto_Condensed"]'>Look at how that <span className='text-[#36E390]'>compares to the land area</span> required to grow the other bags of grocery,</h1>
 
         </div>
@@ -303,14 +303,14 @@ const App = () => {
         </div>
       </div>
 
-      <div className='Slide-9 w-screen h-screen  flex items-center justify-center text-[#35e38f] font-["Roboto"] font-semibold text-5xl bg-[#262626] snap-center'>
+      <div className='Slide-9 w-screen h-screen  flex flex-col items-center justify-center text-[#35e38f] font-["Roboto"] font-semibold text-5xl bg-[#262626] snap-center'>
+      <img src='/new/9.png' alt='slide-9' className='w-[100rem]'/>
         <div className='w-[60rem] font-["Roboto_Condensed"]'>
-          <img src='/new/9.png' alt='slide-9' />
           so, only <span className='text-[#262626] bg-[#68fdb5]'> 17%</span> of global <span className='underline'> calorie supply </span> and <span className='text-[#262626] bg-[#68fdb5]'> 38% </span> of global <span className='underline'>protein supply </span>comes from 80% of our agricultural land which is <span className='text-white'>35% of all habitable surface of the planet.</span>
         </div>
       </div>
 
-      <div className='Slide-10 w-screen h-screen   bg-[url("/bg/blur.png")] bg-no-repeat text-white snap-center'>
+      <div className='Slide-10 w-screen h-screen  bg-cover bg-[url("/bg/blur.png")] bg-no-repeat text-white snap-center'>
         <Header green={true} />
         <div className='flex flex-col w-full items-center justify-around h-[80vh] '>
 
@@ -351,7 +351,7 @@ const App = () => {
         </div>
       </div>
 
-      <div className='Slide-12 w-screen h-screen  bg-[url("/bg/blur.png")] bg-no-repeat gap-12 text-white font-["Roboto"] snap-center'>
+      <div className='Slide-12 w-screen h-screen bg-cover bg-[url("/bg/blur.png")] bg-no-repeat gap-12 text-white font-["Roboto"] snap-center'>
         <Header green={true} />
         <div className='flex flex-col items-center justify-center gap-12'>
 
@@ -383,7 +383,7 @@ const App = () => {
         </div>
       </div>
 
-      <div className='Slide-14 w-screen h-screen  bg-[url("/bg/blur.png")] bg-no-repeat text-white font-["Roboto"] snap-center'>
+      <div className='Slide-14 w-screen h-screen bg-cover bg-[url("/bg/blur.png")] bg-no-repeat text-white font-["Roboto"] snap-center'>
         <Header green={true} />
         <div className='h-[80vh] w-full flex flex-col items-center justify-center gap-12'>
 
@@ -398,7 +398,7 @@ const App = () => {
       <div className='Slide-15 w-screen h-screen snap-center'>
         <Header green={true} />
         <div className='h-[80vh] w-full px-20 flex flex-col items-center justify-evenly'>
-          <h1 className='font-["Roboto_Condensed"] text-5xl w-3/4 '>
+          <h1 className='font-["Roboto_Condensed"] text-5xl w-3/4 font-medium'>
             Most of the agricultural land that needs these fertilizers are used for livestock. Combining meat and dairy, feed takes up most of the agricultural landscape.<br />
             <span className='text-[#36E390]'>Rearing cattle for meat and dairy combined, in turn causes more nitrous oxide emissions.</span>
           </h1>
@@ -411,7 +411,7 @@ const App = () => {
       <div className='Slide-16 w-screen h-screen bg-[url("/bg/slide-16.png")] bg-cover bg-no-repeat snap-center'>
         <Header green={true} />
         <div className='flex justify-center'>
-          <h1 className='font-["Roboto_Condensed"] text-5xl w-2/3 text-white'> <span className='text-[#36E390]'>Let’s look at the countries in the world with highest cattle count and compare that to</span> the countries with highest Nitrous Oxide emissions</h1>
+          <h1 className='font-["Roboto_Condensed"] text-5xl w-2/3 text-white font-bold'> <span className='text-[#36E390]'>Let’s look at the countries in the world with highest cattle count and compare that to</span> the countries with highest Nitrous Oxide emissions</h1>
         </div>
       </div>
 
