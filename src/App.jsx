@@ -425,10 +425,13 @@ const App = () => {
 
       </div>
 
-      <div className='Slide-18 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-4 text-white font-["Roboto"] snap-center'>
+      <div className='Slide-18 w-screen h-screen   bg-[#262626] text-white font-["Roboto"] snap-center'>
+        <Header green = {true} />
+        <div className='h-[80vh] w-full flex flex-col items-center justify-center gap-4'>
         <h1 className='w-[55rem] text-white text-2xl font-bold font-["Roboto"]'>As countries become more prosperous, they increasingly depend on animal protein sources,  </h1>
         <div className='w-[50rem] flex items-center justify-center'><div className="flourish-embed flourish-hierarchy w-full" data-src="visualisation/18939006"></div></div>
         <h1 className='w-[55rem] text-[#68fdb5]  text-3xl font-semibold font-["Roboto"]'>creating a persistent cycle in which we struggle to find solutions that balance our dietary needs with planetary sustainability. </h1>
+      </div>
       </div>
     </div>
   );
