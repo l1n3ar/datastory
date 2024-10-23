@@ -294,49 +294,51 @@ const App = () => {
           <div className='w-full flex justify-between'>
             <p className='font-["Roboto_Condensed"] text-2xl   text-[#2F644B] w-[16rem]'>the rest are forests, shrubs, built-up land and fresh water bodies.</p>
             <div className='flex flex-col '>
-            <h3 className='font-["Roboto_Condensed"] text-2xl font-bold text-right text-[#36E390] w-[16rem]'>80% of all agricultural land is used for livestock</h3>
-            <p className='font-["Roboto_Condensed"] text-xl text-right  text-[#36E390] w-[16rem]'>(Feed + Grazing)</p>
+              <h3 className='font-["Roboto_Condensed"] text-2xl font-bold text-right text-[#36E390] w-[16rem]'>80% of all agricultural land is used for livestock</h3>
+              <p className='font-["Roboto_Condensed"] text-xl text-right  text-[#36E390] w-[16rem]'>(Feed + Grazing)</p>
             </div>
-          
+
           </div>
 
         </div>
       </div>
 
-
       <div className='Slide-9 w-screen h-screen  flex items-center justify-center text-[#35e38f] font-["Roboto"] font-semibold text-5xl bg-[#262626] snap-center'>
         <div className='w-[60rem] font-["Roboto_Condensed"]'>
-          <img src = '/new/9.png' alt = 'slide-9' />
+          <img src='/new/9.png' alt='slide-9' />
           so, only <span className='text-[#262626] bg-[#68fdb5]'> 17%</span> of global <span className='underline'> calorie supply </span> and <span className='text-[#262626] bg-[#68fdb5]'> 38% </span> of global <span className='underline'>protein supply </span>comes from 80% of our agricultural land which is <span className='text-white'>35% of all habitable surface of the planet.</span>
         </div>
       </div>
 
-      <div className='Slide-8 w-screen h-screen  flex flex-col gap-14 bg-[#262626] items-center justify-center text-white snap-center'>
-        <div className='flex flex-col items-center justify-center w-[60rem] gap-2'>
-          <p className='text-xl font-light font-["Roboto"]'>Now, most of this agricultural land uses nitrogen fertilizer for yields. </p>
-          <p className='text-2xl  font-bold font-["Roboto"]'>But, why are nitrogen fertilizers necessary? </p>
-        </div>
-        <div className='flex w-[70rem] items-center justify-evenly'>
+      <div className='Slide-10 w-screen h-screen   bg-[url("/bg/blur.png")]  text-white snap-center'>
+        <Header green={true} />
+        <div className='flex flex-col w-full items-center justify-around h-[80vh] '>
 
-          <div className='flex flex-col gap-6 items-center justify-center'>
-            <img src='/slide-8-1.png' alt='slide-3' style={{ height: "100px" }} />
-            {/* <div className='h-[10rem] w-[10rem] border border-white rounded-lg'></div> */}
-            <p className='text-2xl  font-["Roboto"] font-bold'>Essential Nutrients </p>
-            <p className=' font-light font-["Roboto"] w-[12rem]'>Nitrogen is a major component of amino acids, which are the building blocks of proteins. It is also a crucial part of chlorophyll, the molecule that enables photosynthesis, allowing plants to convert sunlight into energy.</p>
+
+          <div className='flex flex-col items-center justify-center w-[60rem] gap-2'>
+
+            <p className='text-5xl  font-bold font-["Roboto"]'>But, why are nitrogen fertilizers necessary? </p>
           </div>
+          <div className='flex w-[70rem] items-center justify-evenly'>
 
-          <div className='flex flex-col gap-6 items-center justify-center'>
-            <img src='/slide-8-2.png' alt='slide-3' style={{ height: "100px" }} />
-            {/* <div className='h-[10rem] w-[10rem] border border-white rounded-lg'></div> */}
-            <p className='text-2xl  font-["Roboto"] font-bold'>Crop Yields</p>
-            <p className=' font-light font-["Roboto"] w-[12rem]'>Adequate nitrogen availability directly correlates with increased crop yields. Insufficient nitrogen can lead to poor plant growth, reduced leaf area, and lower biomass production, ultimately affecting the quantity and quality of the harvest.</p>
+            <div className='flex flex-col gap-6 items-center justify-center'>
+              <img src='/slide-8-1.png' alt='slide-3' style={{ height: "100px" }} />
+              {/* <div className='h-[10rem] w-[10rem] border border-white rounded-lg'></div> */}
+              <p className='text-2xl  font-["Roboto"] font-bold'>Essential Nutrients </p>
+              <p className='font-light font-["Roboto"] w-[12rem]'>Nitrogen is a major component of amino acids, which are the building blocks of proteins. It is also a crucial part of chlorophyll, the molecule that enables photosynthesis, allowing plants to convert sunlight into energy.</p>
+            </div>
+
+            <div className='flex flex-col gap-6 items-center justify-center'>
+              <img src='/slide-8-2.png' alt='slide-3' style={{ height: "100px" }} />
+              {/* <div className='h-[10rem] w-[10rem] border border-white rounded-lg'></div> */}
+              <p className='text-2xl  font-["Roboto"] font-bold'>Crop Yields</p>
+              <p className=' font-light font-["Roboto"] w-[12rem]'>Adequate nitrogen availability directly correlates with increased crop yields. Insufficient nitrogen can lead to poor plant growth, reduced leaf area, and lower biomass production, ultimately affecting the quantity and quality of the harvest.</p>
+            </div>
+
           </div>
-
+          <p className='text-xl w-[40rem] font-["Roboto"] text-[#68fdb5] font-light italic'>Natural soil often lacks sufficient nitrogen to meet the demands of high-yield crops, especially in intensive farming systems. As a result the world is increasingly relying on the use of synthetic fertilizers over natural ones to cope with the demands of the growing population.</p>
         </div>
-        <p className='text-2xl w-[40rem] font-["Roboto"] text-[#68fdb5] font-semibold'>Natural soil often lacks sufficient nitrogen to meet the demands of high-yield crops, especially in intensive farming systems. As a result the world is increasingly relying on the use of synthetic fertilizers over natural ones to cope with the demands of the growing population.</p>
       </div>
-
-
 
       <div className='Slide-10 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] gap-12 text-white font-["Roboto"] snap-center'>
         <h1 className='w-[60rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>The three major greenhouse gases in the atmosphere are Carbon Dioxide, Methane and Nitrous Oxide. </h1>
