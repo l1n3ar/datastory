@@ -250,10 +250,14 @@ const App = () => {
         </div>
       </div>
 
-      <div className='Slide-4 w-screen h-screen  flex flex-col items-center justify-center bg-[#262626] snap-center'>
-        <h1 className='w-[60rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>it would need <span className='underline'>{selectedFood.land}</span> sq. m of land to grow.
-          That’s equivalent to the area of <span className='underline text-[#35e38f]'>{selectedFood.eq}</span>.</h1>
-        {/* <div className='text-white'>Some graphic</div> */}
+      <div className='Slide-4 w-screen h-screen   bg-[url("/bg/slide-4.png")] snap-center'>
+      <Header green={true} />
+        <div className='h-full w-full flex flex-col items-center justify-center '>
+        <h1 className='max-w-[70rem] text-white text-5xl font-bold font-["Roboto_Condensed"]'>It would need <span className='underline'>{selectedFood.land}</span> sq. m of land to grow.
+        That’s equivalent to the area of <span className='underline text-[#35e38f]'>{selectedFood.eq}</span>.</h1>
+        </div>
+        
+      
       </div>
 
       <div className='Slide-5 w-screen h-screen  flex flex-col items-center justify-center gap-2 bg-[#262626] snap-center'>
