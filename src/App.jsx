@@ -341,72 +341,77 @@ const App = () => {
       </div>
 
       <div className='Slide-11 w-screen h-screen snap-center bg-[#36E390]'>
-          <Header white={true} />
-            <img src = '/new/11.png' alt='slide-11' />
+        <Header white={true} />
+        <img src='/new/11.png' alt='slide-11' />
 
-            <div className='w-full h-[80vh] px-[20rem] flex flex-col justify-evenly'>
+        <div className='w-full h-[80vh] px-[20rem] flex flex-col justify-evenly'>
 
-            </div>
+        </div>
       </div>
 
       <div className='Slide-12 w-screen h-screen  bg-[url("/bg/blur.png")] gap-12 text-white font-["Roboto"] snap-center'>
-        <Header green = {true} />
+        <Header green={true} />
         <div className='flex flex-col items-center justify-center gap-12'>
 
-        <h1 className='w-[60rem] text-white text-5xl font-bold '>The three major greenhouse gases in the atmosphere are Carbon Dioxide, Methane and Nitrous Oxide. </h1>
-        <div className='w-[50rem]'>
-          <img src='/slide-10.jpeg' alt='Graph' />
-        </div>
+          <h1 className='w-[60rem] text-white text-5xl font-bold '>The three major greenhouse gases in the atmosphere are Carbon Dioxide, Methane and Nitrous Oxide. </h1>
+          <div className='w-[50rem]'>
+            <img src='/slide-10.jpeg' alt='Graph' />
+          </div>
         </div>
       </div>
 
       <div className='Slide-13 w-screen h-screen   bg-[#262626] bg-[url("/new/13.png")] bg-cover bg-no-repeat gap-12 text-white font-["Roboto"] snap-center'>
-        <Header green = {true} />
-       
-      <div className='flex flex-col items-center justify-center h-[80vh] gap-10'>
-        <h1 className='w-[50rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>Today, Nitrous Oxide levels in the air are increasing rapidly.</h1>
-        <Tabs defaultValue="linear" className="w-[50rem]">
-          <TabsList>
-            <TabsTrigger value="linear">Linear</TabsTrigger>
-            <TabsTrigger value="log">Log</TabsTrigger>
-          </TabsList>
-          <TabsContent value="linear">
-            <div className='w-[50]'>
-              <img src='/linear.png' alt='Graph' />
+        <Header green={true} />
+
+        <div className='flex flex-col items-center justify-center h-[80vh] gap-10'>
+          <h1 className='w-[50rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>Today, Nitrous Oxide levels in the air are increasing rapidly.</h1>
+          <Tabs defaultValue="linear" className="w-[50rem]">
+            <TabsList>
+              <TabsTrigger value="linear">Linear</TabsTrigger>
+              <TabsTrigger value="log">Log</TabsTrigger>
+            </TabsList>
+            <TabsContent value="linear">
+              <div className='w-[50]'>
+                <img src='/linear.png' alt='Graph' />
+              </div></TabsContent>
+            <TabsContent value="log"> <div className='w-[50]'>
+              <img src='/log.png' alt='Graph' />
             </div></TabsContent>
-          <TabsContent value="log"> <div className='w-[50]'>
-            <img src='/log.png' alt='Graph' />
-          </div></TabsContent>
-        </Tabs>
-      </div>
+          </Tabs>
+        </div>
       </div>
 
       <div className='Slide-14 w-screen h-screen  bg-[url("/bg/blur.png")]  text-white font-["Roboto"] snap-center'>
-      <Header green={true} />
-      <div className='h-[80vh] w-full flex flex-col items-center justify-center gap-12'>
+        <Header green={true} />
+        <div className='h-[80vh] w-full flex flex-col items-center justify-center gap-12'>
 
-     
-        <h1 className='w-[69rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>The Nitrous Oxide emissions from <span className='text-[#262626] bg-[#35e38f]'> agriculture </span> around the world contribute to a total of <span className=' text-[#262626] bg-[#35e38f]'>  67% </span> <span className='text-[#35e38f]'>  nitrous oxide emissions globally.</span> </h1>
-        <div className='w-[50rem]'>
-          <img src='/slide-12.png' alt='Graph' />
-        </div>
+
+          <h1 className='w-[69rem] text-white text-5xl font-bold font-["Roboto Condensed"]'>The Nitrous Oxide emissions from <span className='text-[#262626] bg-[#35e38f]'> agriculture </span> around the world contribute to a total of <span className=' text-[#262626] bg-[#35e38f]'>  67% </span> <span className='text-[#35e38f]'>  nitrous oxide emissions globally.</span> </h1>
+          <div className='w-[50rem]'>
+            <img src='/slide-12.png' alt='Graph' />
+          </div>
         </div>
       </div>
 
       <div className='Slide-15 w-screen h-screen snap-center'>
         <Header green={true} />
         <div className='h-[80vh] w-full px-20 flex flex-col items-center justify-evenly'>
-            <h1 className='font-["Roboto_Condensed"] text-5xl w-3/4 '>
+          <h1 className='font-["Roboto_Condensed"] text-5xl w-3/4 '>
             Most of the agricultural land that needs these fertilizers are used for livestock. Combining meat and dairy, feed takes up most of the agricultural landscape.<br />
             <span className='text-[#36E390]'>Rearing cattle for meat and dairy combined, in turn causes more nitrous oxide emissions.</span>
-            </h1>
+          </h1>
 
-            <img src = '/new/15.png' alt='slide-15' />
-           
+          <img src='/new/15.png' alt='slide-15' />
+
         </div>
       </div>
 
-
+      <div className='Slide-16 w-screen h-screen bg-[url("/bg/slide-16.png")] bg-cover bg-no-repeat snap-center'>
+        <Header green={true} />
+        <div className='flex justify-center'>
+          <h1 className='font-["Roboto_Condensed"] text-5xl w-2/3 text-white'> <span className='text-[#36E390]'>Let’s look at the countries in the world with highest cattle count and compare that to</span> the countries with highest Nitrous Oxide emissions</h1>
+        </div>
+      </div>
 
 
 
